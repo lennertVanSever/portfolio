@@ -11,8 +11,6 @@
         <li><a>Introduction</a></li>
         <li><a>Projects I worked on</a></li>
         <li><a>Technologies I used</a></li>
-        <li><a>Experience I have</a></li>
-        <li><a>Education I had</a></li>
         <li><a>Books I read</a></li>
         <li><a>Conferences I went to</a></li>
         <li><a>Contact me</a></li>
@@ -20,51 +18,86 @@
     </nav>
     <article>
       <header>
-        <h1>Temporary title</h1>
+        <h1>Portfolio</h1>
       </header>
       <section>
-        <p>Hi! My name is Lennert Van Sever and my passion is in creating challenging web applications. As a developer I like to do be involved into the full process from User Experience and Interface Design to front and backend development. I don't like to be bound to a certain technology, it really depends on the use case which technologies should be used so finding the right one and learning to apply them is just part of the fun.</p>
-        <p>If you don't have much time you can through my <a href="https://www.linkedin.com/in/lennert-van-sever-72783284/">LinkedIn</a>. On this website I go a bit more into detail.</p>
+        <p>Hi! My name is Lennert Van Sever and currently I’m based in Brussels, Belgium. My passion is in creating challenging web applications. As a developer I like to be involved into the full process from user experience and interface design to front and backend development. I don’t like to be bound to a certain technology, it really depends on the use case which technologies should be used so finding the right one and learning to apply them is just part of the fun.</p>
+        <p>This portfolio website is completementary to my <a href="https://www.linkedin.com/in/lennert-van-sever-72783284/">LinkedIn</a> where you can check my experience and education</p>
       </section>
       <section>
         <h2>Projects I worked on</h2>
-        <p>So far I have only worked on a project basis. Most projects took around 6 months up to a year to be developed, although a project is never really finished. Everytime I worked together with a small team of 2 up to 6 great people, keep that in mind since I don't want to take all the credit.</p>
-        <h3>Approvals - Borealis Digital Studio</h3>
-        <video width="100%" controls>
-          <source src="./approvals.mp4" type="video/mp4">
-          Your browser does not support HTML5 video.
-        </video>
-        <p>Approvals makes it easier to approve or reject items as a manager within <a href="https://www.borealisgroup.com/">Borealis</a>. The purpose is that it becomes so easy that managers approve themself and not delegate it to their assistences.</p>
-        <p>For this project I worked as a front-end developer to assure the User Interface, experience and integration was coming together. All the components were custom build, no UI library. It was a lot of fun to get the micro transitions just right. One of the challenges was integrating with SAP and having a better mobile experience through adding Progressive Web App (PWA) capabilities. We did the implementation with ReactJS, it was the first time I used React Hooks on a large scale. Approvals is my latest project and it's still under development.</p>
-        <h3>Nutriguide</h3>
-        <h3>Erasmus+ dashboard</h3>
-        <h3>Erasmus+ mobile app</h3>
-        <h3>Artist connections</h3>
+        <p>So far I have only worked on a project basis. Most projects took around 6 months up to a year to be developed, although a project is never really finished. Everytime I worked together with a small team of 2 up to 6 great people, keep that in mind since I don’t want to take all the credit.</p>
+        <section>
+          <h3>Approvals - Borealis Digital Studio</h3>
+          <video width="100%" controls>
+            <source src="./videos/approvals.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+          <p>Approvals makes it easier to approve or reject items as a manager within <a href="https://www.borealisgroup.com/">Borealis</a>. The purpose is that it becomes so easy that managers would do it themself and not delegate it to their assistences.</p>
+          <p>For this project I worked as a frontend developer to assure that the user interface, experience and integration was coming together. All the components were custom build, no UI library. It was a lot of fun to get the micro transitions just right. One of the challenges was integrating with SAP and having a better mobile experience through adding Progressive Web App (PWA) capabilities. One of my goals was to get a perfect lighthouse score through continous automated testing. We did the implementation with ReactJS and Redux, it was the first time I used React Hooks on a large scale. Approvals is my latest project and it’s still under development.</p>
+        </section>
+        <section>
+          <h3>NutriGuide - Borealis Digital Studio</h3>
+          <video width="100%" controls>
+            <source src="./videos/nutriguide.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+          <p>
+            NutriGuide calculates for farmers/resellers which fertilizers they should use for their plot in order to get the optimal yield within the legal framework. It’s available in Austria and France, you can even <a href="https://nutriguide.borealis-lat.com">try it yourself</a>.
+          </p>
+          <p>
+            Just before NutriGuide was released I was assigned to the project to be soly responsible of the frontend. The most challenging part was the customization needs for each role and country without ending up with an endless amount of if statements. The solution was to put all the specific logic in configuration files. Another challenge was to make the form as easy to use as possible since a lot of parameters have to be filled in to make an accurate calculations. Under the hood the interface was build with the React Material UI component library. State management was handled with Redux.
+          </p>
+        </section>
+        <section>
+          <h3>Artist connections - Personal</h3>
+          <video width="100%" controls>
+            <source src="./videos/artist-connections.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+          <p>While browsing on Spotify I wondered whether all the artists in the world are “related” to each other. In order to proof it, I used the Spotify API to find the 20 related artists of my favourite artist Whitney. I iterated this process until all the found artists were covered. Eventually I ended up with 1,212,134 artist and 21,261,611 connections. I saved this data as nodes and relationships in a Neo4j graph database.</p>
+          <p>Afterwards I created a <a href="http://artistconnections.tk/">simple website</a> where you can lookup the relation between any two given artists. It’s quite amazing how even the most distinct artists are still related to each other. If you want more detailed information, feel free to read my <a href="https://medium.com/@lennertvansever/the-shortest-path-between-any-two-given-artists-with-neo4j-694ada16177b">Medium blog post</a>.</p>
+        </section>
+        <section>
+          <h3>Erasmus+ Digital Tools - European University Foundation</h3>
+          <img src="./images/erasmus.png" width="100%" alt="Erasmus+ promotion used in the Erasmus+ app" />
+          <p>As an Erasmus student I was with the annoyed how inefficient the administration of the Erasmus+ program was. I decided to do something about it with my bachelor thesis: Digitizing the Erasmus+ programme. I contacted the European Commission with my initial idea and they send it through to the <a href="https://uni-foundation.eu">European University Foundation</a> who then mentored my bachelor thesis.</p>
+          <p>Eventually they decided to hire me so that I could work further on my project. After 2 months we had a proposal to create the <a href="https://erasmusapp.eu"> Erasmus+ app</a>. The European Commission agreed to fund it and after 8 months it was developed and <a href="https://ec.europa.eu/commission/presscorner/detail/en/IP_17_1574">released to the world</a>. With 40 000 downloads I was happy with the results but it was only usefull for students and not universities so afterwards I build the <a href="https://www.erasmus-dashboard.eu">Erasmus+ dashboard</a> to help them with their mobility administration.</p>
+          <p>For both applications I was the only developer so I was responsible for the design, frontend, back end and data management. For the development I used ReactJS, MeteorJS, Cordova, NodeJS, GraphQL, MongoDB and MySQL.</p>
+        </section>
       </section>
       <section>
         <h2>Technologies I used</h2>
-        <p>Thanks to the above projects I was able to work extensively on my technology stack. </p>
-        <h3>Front end development</h3>
-        <h3>Back end development</h3>
-        <h3>Design</h3>
-        <h3>Other</h3>
+        <p>I enjoy combining my frontend, backend and UI/UX design skills to create usefull web applications. However, most of my time is spend on frontend technologies but it’s still essential to learn from the other fields</p>
+        <section>
+          <h3>frontend development</h3>
+          <p>I started creating my first web applications in 2013 with only <b>HTML</b> and <b>CSS</b>. Back then responsive web design was all the rage so even my first creations had responsive layouts.</p>
+          <p>Today I primarily use <b>ReactJS</b> with Styled Components and hooks. For state management I tend to switch between Redux and Apollo local state management. In the future I would like to learn TypeScript and maybe Flutter. I highly value performance, accessibility, and best practices so I often use Google Lighthouse to score my websites.</p>
+        </section>
+        <section>
+          <h3>Backend development</h3>
+          <p>During my studies I mostly worked with PHP, Java and MySQL. Now I like to develop with <b>NodeJS</b> since then it requires less context switching when moving between the frontend and backend. On the database side I use either MongoDB or PostgreSQL depending on the context. I love to work with GraphQL since I think it’s the future of API design.</p>
+        </section>
+        <section>
+          <h3>UX/UI design</h3>
+          <p>Understanding the user needs is critical for any proper project. For this reason I highly value user interviews and feedback. Whenever I’m building a web application, I always keep in mind how the user would perceive it.</p>
+          <p>For user interface design I often use Sketch and Abstract for version control. However I only use it to get a rough idea since you are way closer to the real interaction when <b>designing in the browser</b>.</p>
+        </section>
       </section>
-      <section>
-        <h2>Experience I have</h2>
-      </section>
-      <section>
-        <h2>Education I had</h2>
-        <h3>Multimedia - Erasmus University College</h3>
-      </section>
+      
       <section>
         <h2>Books I read</h2>
+        <p>Development and design is my real passion so I’m more than happy to sacrifice some free time to learn more about it. I only mention the most inspiring books.</p>
+        <ul>
+          <li>Better web typography, Matej Latin; I l</li>
+        </ul>
       </section>
       <section>
         <h2>Conferences I went to</h2>
       </section>
       <section>
         <h2>Contact me</h2>
-        <p>When you contact me please give me a good reason why I would be a good match. Don't just give me a job description with a matching tech stack, I'm a human not a computer.</p>
+        <p>When you contact me please give me a good reason why I would be a good match. Don’t just give me a job description with a matching tech stack, I’m a human not a computer.</p>
         <p>You can reach by email <a href="mailto:lennert_vansever@hotmail.be">lennert_vansever@hotmail.be</a>, telephone <a href="tel:+32 489 47 1063">+32 489 47 1063</a> or <a href="https://www.linkedin.com/in/lennert-van-sever-72783284/">LinkedIn</a>.</p>
       </section>
     </article>

@@ -4,17 +4,24 @@
     <title>Portfolio | Lennert Van Sever</title>
     <meta name="description" content="Web developer with 4 years of professional experience. Feel free to checkout my projects!" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:image" content="images/profile-big.jpg">
-    <script>
-      WebFont.load({
-         google: {
-           families: [
-             'Lato:400,700'
-           ]
-         }
-       });
-     </script>
+    <meta property="og:image" content="images/profile-big.jpg">     
     <style>
+      @font-face {
+        font-family: 'Lato';
+        font-weight: normal;
+        src: url('fonts/LatoLatin-Regular.eot');
+        src: url('fonts/LatoLatin-Regular.woff2') format('woff2'), 
+             url('fonts/LatoLatin-Regular.woff') format('woff'),
+             url('fonts/LatoLatin-Regular.ttf')  format('truetype');
+      }
+      @font-face {
+        font-family: 'Lato';
+        font-family: bold;
+        src: url('fonts/LatoLatin-Bold.eot');
+        src: url('fonts/LatoLatin-Bold.woff2') format('woff2'), 
+             url('fonts/LatoLatin-Bold.woff') format('woff'),
+             url('fonts/LatoLatin-Bold.ttf')  format('truetype');
+      }
       * {
         margin: 0;
         padding: 0;
